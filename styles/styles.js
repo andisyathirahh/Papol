@@ -16,6 +16,22 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         paddingHorizontal: 20
     },
+    inputbox2: {
+        backgroundColor: '#173248',
+        marginHorizontal: 60,
+        marginTop: 17,
+        width: 300,
+        height: 45,
+      
+        borderRadius: 10,
+        borderColor:'white',
+        marginLeft:30,
+        paddingRight:20,
+
+        paddingHorizontal: 20,
+        borderWidth: 1,
+        
+    },
     placeholdertext: {
         color: 'white',
         marginLeft: -225,
@@ -50,11 +66,28 @@ export const styles = StyleSheet.create({
         fontFamily: 'Times New Rowman',
         fontSize: 16,
     },
+    h1Text2: {
+        color: 'white',
+        fontWeight: 'bold',
+      textAlign:'left',
+      marginLeft: -180,
+        fontFamily: 'Times New Rowman',
+        fontSize: 16,
+        marginBottom:20,
+    },
+
 
     subtext: {
         color: 'white',
         marginLeft: 30,
         marginTop: 20,
         fontSize: 14,
+    },
+    subtext2: {
+        color: 'white',
+    marginRight: 150,
+        marginTop: 20,
+        fontSize: 14,
+        textAlign:'right',
     },
 })

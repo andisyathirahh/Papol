@@ -16,7 +16,7 @@ export default function HelpScreen() {
         <View style={styles.container}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
         <Image
-          source={require('/Users/andisyathirah/DTI/ECall/assets/user.png')}
+          source={require('./../assets/user.png')}
           style={{
             width: 100,
             height: 100,
