@@ -20,7 +20,7 @@ export default function ProfileInstansi() {
           style={{
             width: 100,
             height: 100,
-            marginTop: 25,
+            marginTop: 100,
             marginBottom: 25,
           }}
         />
@@ -40,7 +40,6 @@ export default function ProfileInstansi() {
         <View style={{flexDirection:"row", justifyContent:'center'}}>
         <TextInput style={styles.inputbox2} placeholder="****************" >
         </TextInput>
-        <Text style={{marginLeft:-30}}>Ubah</Text>
         </View>
         </View>
         </ScrollView>

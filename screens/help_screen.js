@@ -36,7 +36,7 @@ export default function HelpScreen() {
 
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
             <TouchableOpacity style={styles.loginbutton}
-            onPress={() => navigation.navigate('Login')}>
+            onPress={() => navigation.navigate('Home')}>
                 <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Kembali Ke Menu</Text>
             </TouchableOpacity>
             </View>

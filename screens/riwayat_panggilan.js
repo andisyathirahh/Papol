@@ -9,35 +9,81 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import {useNavigation} from '@react-navigation/native';
 
 import {styles} from './../styles/styles';
+import { beginAsyncEvent } from 'react-native/Libraries/Performance/Systrace';
 
 export default function Riwayat() {
     const navigation = useNavigation();
     return (
-        <View style={styles.container}>
-            <Image style={{marginBottom: -60}}
+        <View style={{flex: 1, justifyContent: 'center', backgroundColor: '#173248'}}>
+            <Image style={{marginTop: -40, justifyContent: 'center', marginLeft: 40}}
                 source={require('./../assets/logo.png')}></Image>
-        <Text style={styles.h1Text2}>Riwayat Panggilan</Text>
-           
-            <Text  style={styles.h1Text2}>Arsike Cipta Pelangi</Text>
-            <View>
-            <View style={{flexDirection:"row", justifyContent:'center'}}>
-            <Text style={{color:'white'}}>12 November</Text> 
-            <Text style={{marginLeft:160,color:'white'}}>21.31</Text>
-            
-            <Image style={{marginLeft:30}}
-                source={require('./../assets/detail.png')}></Image>
+
+            <Text style={{color: 'white', fontWeight: 'bold',
+                marginLeft: 45, fontSize: 20, marginBottom: 25, marginTop: -25}}>Riwayat Panggilan</Text>
+
+            <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
+                <View>
+                    <Text style={{marginLeft: 45, color: 'white',
+                    fontWeight: 'bold'}} >Arsike Cipta Pelangi</Text>
+                    <Text style={{marginTop: 10, marginLeft: 45, color: 'white'}} >
+                        20 November 2020</Text>
                 </View>
-        </View>
-        
-      
-      
-        
-     
-        <TouchableOpacity style={styles.loginbutton}
-            onPress={() => navigation.navigate('Home')}>
+                <Text style={{marginLeft: 110, color: 'white'}} >21.31</Text>
+                <Image source={require('./../assets/detail.png')}
+                    style={{marginLeft: 15}}></Image>
+            </View>
+            <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
+                <View>
+                    <Text style={{marginLeft: 45, color: 'white',
+                    fontWeight: 'bold'}} >Arsike Cipta Pelangi</Text>
+                    <Text style={{marginTop: 10, marginLeft: 45, color: 'white'}} >
+                        20 November 2020</Text>
+                </View>
+                <Text style={{marginLeft: 110, color: 'white'}} >21.31</Text>
+                <TouchableOpacity onPress={() => navigation.navigate('Detail Riwayat')}>
+                <Image source={require('./../assets/detail.png')}
+                    style={{marginLeft: 15}}></Image>
+                </TouchableOpacity>
+            </View>
+            <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
+                <View>
+                    <Text style={{marginLeft: 45, color: 'white',
+                    fontWeight: 'bold'}} >Arsike Cipta Pelangi</Text>
+                    <Text style={{marginTop: 10, marginLeft: 45, color: 'white'}} >
+                        20 November 2020</Text>
+                </View>
+                <Text style={{marginLeft: 110, color: 'white'}} >21.31</Text>
+                <Image source={require('./../assets/detail.png')}
+                    style={{marginLeft: 15}}></Image>
+            </View>
+            <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
+                <View>
+                    <Text style={{marginLeft: 45, color: 'white',
+                    fontWeight: 'bold'}} >Arsike Cipta Pelangi</Text>
+                    <Text style={{marginTop: 10, marginLeft: 45, color: 'white'}} >
+                        20 November 2020</Text>
+                </View>
+                <Text style={{marginLeft: 110, color: 'white'}} >21.31</Text>
+                <Image source={require('./../assets/detail.png')}
+                    style={{marginLeft: 15}}></Image>
+            </View>
+            <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
+                <View>
+                    <Text style={{marginLeft: 45, color: 'white',
+                    fontWeight: 'bold'}} >Arsike Cipta Pelangi</Text>
+                    <Text style={{marginTop: 10, marginLeft: 45, color: 'white'}} >
+                        20 November 2020</Text>
+                </View>
+                <Text style={{marginLeft: 110, color: 'white'}} >21.31</Text>
+                <Image source={require('./../assets/detail.png')}
+                    style={{marginLeft: 15}}></Image>
+            </View>
+
+            <TouchableOpacity style={styles.loginbutton}
+            onPress={() => navigation.navigate('HomeInstansi')}>
                 <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Kembali Ke Menu</Text>
             </TouchableOpacity>
-         </View>
+        </View>
 
     );
 }

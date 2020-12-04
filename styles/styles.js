@@ -21,8 +21,7 @@ export const styles = StyleSheet.create({
         marginHorizontal: 60,
         marginTop: 15,
         width: 300,
-        height: 45,
-      
+        height: 40,
         borderRadius: 10,
         borderColor:'white',
         marginLeft:30,
@@ -36,7 +35,8 @@ export const styles = StyleSheet.create({
         color: 'white',
         marginLeft: -225,
         marginTop: 35,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        marginBottom: 5,
     },
     konfirmtext: {
         color: 'white',
@@ -51,21 +51,22 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     loginbutton: {
-        marginTop: 40,
+        marginTop: 30,
         borderColor: 'white',
         borderWidth: 1.5,
         height: 38,
         width: 150,
         alignItems: 'center',
         justifyContent: 'center',
+        alignSelf: 'center',
         borderRadius: 8,
     },
 
     instantionbutton: {
-        marginTop: 90,
+        marginTop: 60,
         borderColor: 'white',
         borderWidth: 1,
-        height: 37,
+        height: 35,
         width: 190,
         alignItems: 'center',
         justifyContent: 'center',
@@ -77,12 +78,13 @@ export const styles = StyleSheet.create({
         marginLeft: 30,
         fontFamily: 'Times New Rowman',
         fontSize: 16,
+        marginTop: 15
     },
     h1Text2: {
         color: 'white',
         fontWeight: 'bold',
-      textAlign:'left',
-      marginLeft: -180,
+        textAlign:'left',
+        marginLeft: -180,
         fontFamily: 'Times New Rowman',
         fontSize: 16,
         marginBottom:20,

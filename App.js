@@ -14,6 +14,8 @@ import HomeScreen from './screens/home_screen';
 import ChangePasswordScreen from './screens/change_password';
 import CallingScreen from './screens/calling';
 import MapsScreen from './screens/maps_screen';
+import LoginInstansiScreen from './screens/login_instansi';
+import DetailRiwayat from './screens/detail_riwayat';
 
 const Stack = createStackNavigator();
 
@@ -49,6 +51,10 @@ function App() {
         component={CallingScreen} 
         options={{headerShown: false}}/>
 
+        <Stack.Screen name="Login Instansi" 
+        component={LoginInstansiScreen} 
+        options={{headerShown: false}}/>
+
         <Stack.Screen name="HomeInstansi" 
         component={HomeInstansi} 
         options={{headerShown: false}}/>
@@ -59,6 +65,10 @@ function App() {
 
         <Stack.Screen name="Riwayat" 
         component={Riwayat} 
+        options={{headerShown: false}}/>
+
+        <Stack.Screen name="Detail Riwayat" 
+        component={DetailRiwayat} 
         options={{headerShown: false}}/>
 
         <Stack.Screen name="Maps" 

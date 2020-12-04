@@ -14,16 +14,16 @@ export default function LoginScreen() {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
-            <Image style={{marginTop: 70, marginBottom: -50}}
+            <Image style={{ marginBottom: -70}}
                 source={require('./../assets/logo.png')}></Image>
 
             <Text style={styles.placeholdertext}>No. Telepon</Text>
 
-            <TextInput style={styles.inputbox} placeholder="No. Telepon" ></TextInput>
+            <TextInput style={styles.inputbox} ></TextInput>
 
             <Text style={styles.placeholdertext} >Password</Text>
 
-            <TextInput style={styles.inputbox} placeholder="Password" ></TextInput>
+            <TextInput style={styles.inputbox} ></TextInput>
 
             <TouchableOpacity style={styles.loginbutton}
             onPress={() => navigation.navigate('Home')}>
@@ -34,7 +34,7 @@ export default function LoginScreen() {
             <Text style={{color: 'white', marginTop: 10, 
                 textDecorationLine: 'underline', fontWeight: 'bold'}} onPress={() => navigation.navigate('Register')}>Daftar</Text>
             
-            <TouchableOpacity style={styles.instantionbutton}>
+            <TouchableOpacity style={styles.instantionbutton} onPress={() => navigation.navigate('Login Instansi')}>
                 <Text style={{color: 'white', textAlign: 'center', 
                 textAlignVertical: 'center', fontWeight: 'bold', fontSize: 13}} >Instansi</Text>
             </TouchableOpacity>

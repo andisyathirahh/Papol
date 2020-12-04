@@ -14,19 +14,23 @@ export default function LoginInstansiScreen() {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
-            <Image style={{marginTop: 70, marginBottom: -50}}
+            <Image style={{marginTop: -90, marginBottom: -40}}
                 source={require('./../assets/logo.png')}></Image>
 
-            <Text style={styles.placeholdertext}>Identitas Instansi</Text>
+            <Text style={{color: 'white',
+                marginLeft: -180,
+                marginBottom: 5,
+                marginTop: 35,
+                fontWeight: 'bold'}}>Identitas Instansi</Text>
 
-            <TextInput style={styles.inputbox} placeholder="Identitas Instansi" ></TextInput>
+            <TextInput style={styles.inputbox}></TextInput>
 
             <Text style={styles.placeholdertext} >Password</Text>
 
-            <TextInput style={styles.inputbox} placeholder="Password" ></TextInput>
+            <TextInput style={styles.inputbox}></TextInput>
 
             <TouchableOpacity style={styles.loginbutton}
-            onPress={() => navigation.navigate('Profile')}>
+            onPress={() => navigation.navigate('HomeInstansi')}>
                 <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Masuk</Text>
             </TouchableOpacity>
 

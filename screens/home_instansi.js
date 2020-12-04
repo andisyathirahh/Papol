@@ -21,6 +21,11 @@ export default function HomeInstansi() {
             onPress={() => navigation.navigate('ProfileInstansi')}>
                 <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Profile</Text>
             </TouchableOpacity>
-                 </View>
+
+            <TouchableOpacity style={styles.loginbutton}
+            onPress={() => navigation.navigate('Riwayat')}>
+                <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Riwayat Panggilan</Text>
+            </TouchableOpacity>
+        </View>
     );
 }
