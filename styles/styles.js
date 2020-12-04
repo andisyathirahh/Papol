@@ -38,6 +38,18 @@ export const styles = StyleSheet.create({
         marginTop: 35,
         fontWeight: 'bold'
     },
+    konfirmtext: {
+        color: 'white',
+        marginLeft: -155,
+        marginTop: 35,
+        fontWeight: 'bold'
+    },
+    namatext: {
+        color: 'white',
+        marginLeft: -210,
+        marginTop: 35,
+        fontWeight: 'bold'
+    },
     loginbutton: {
         marginTop: 40,
         borderColor: 'white',

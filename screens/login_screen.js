@@ -32,7 +32,7 @@ export default function LoginScreen() {
 
             <Text style={{color: 'white', marginTop: 40}} >Belum Memiliki Akun?</Text>
             <Text style={{color: 'white', marginTop: 10, 
-                textDecorationLine: 'underline', fontWeight: 'bold'}} >Daftar</Text>
+                textDecorationLine: 'underline', fontWeight: 'bold'}} onPress={() => navigation.navigate('Register')}>Daftar</Text>
             
             <TouchableOpacity style={styles.instantionbutton}>
                 <Text style={{color: 'white', textAlign: 'center', 

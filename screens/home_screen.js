@@ -43,7 +43,8 @@ export default function HomeScreen()
                 <Text style= {{textAlign: 'center', color: 'white', fontWeight: 'bold'}}>Bantuan</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{marginTop: 40}} >
+            <TouchableOpacity style={{marginTop: 40}} 
+            onPress={() => navigation.navigate('Profile')}>
                 <Text style= {{textDecorationLine: 'underline', color: 'white', fontWeight: 'bold'}}>Akun Anda</Text>
             </TouchableOpacity>
         </View>

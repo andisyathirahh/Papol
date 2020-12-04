@@ -17,10 +17,10 @@ export default function RegisterScreen() {
                 source={require('./../assets/logo.png')}></Image>
             <ScrollView>
                 <View style={{alignItems: "center", justifyContent: "center"}}>
-            <Text style={styles.placeholdertext}>Nomor Induk</Text>
+            <Text style={styles.namatext}>Nomor Induk</Text>
             <TextInput style={styles.inputbox} placeholder="Contoh : 77403828...." ></TextInput>
 
-            <Text style={styles.placeholdertext}>Nama Lengkap</Text>
+            <Text style={styles.namatext}>Nama Lengkap</Text>
             <TextInput style={styles.inputbox} placeholder="Contoh : Raditya Dika" ></TextInput>
 
             <Text style={styles.placeholdertext}>No. Telepon</Text>
@@ -29,8 +29,8 @@ export default function RegisterScreen() {
             <Text style={styles.placeholdertext}>Password</Text>
             <TextInput style={styles.inputbox} placeholder="Masukkan Password Min 6 char" ></TextInput>
 
-            <Text style={styles.placeholdertext}>Konfirmasi Password</Text>
-            <TextInput style={styles.inputbox} placeholder="Konfirmasi Password" ></TextInput>
+            <Text style={styles.konfirmtext}>Konfirmasi Password</Text>
+            <TextInput style={styles.inputbox} placeholder="Masukkan Password Min 6 char" ></TextInput>
 
             <TouchableOpacity style={styles.loginbutton}
             onPress={() => navigation.navigate('Login')}>
