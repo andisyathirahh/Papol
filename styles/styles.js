@@ -18,7 +18,6 @@ export const styles = StyleSheet.create({
     },
     placeholdertext: {
         color: 'white',
-        justifyContent: 'flex-start',
         marginLeft: -225,
         marginTop: 35,
         fontWeight: 'bold'
@@ -43,5 +42,19 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 8,
+    },
+    h1Text: {
+        color: 'white',
+        fontWeight: 'bold',
+        marginLeft: 30,
+        fontFamily: 'Times New Rowman',
+        fontSize: 16,
+    },
+
+    subtext: {
+        color: 'white',
+        marginLeft: 30,
+        marginTop: 20,
+        fontSize: 14,
     },
 })

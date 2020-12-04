@@ -6,13 +6,15 @@ import {
     Image,
 } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import {useNavigation} from '@react-navigation/native';
 
 import {styles} from './../styles/styles';
 
 export default function LoginScreen() {
+    const navigation = useNavigation();
     return (
         <View style={styles.container}>
-            <Image style={{marginTop: -90}} 
+            <Image style={{marginTop: 70, marginBottom: -50}}
                 source={require('./../assets/logo.png')}></Image>
 
             <Text style={styles.placeholdertext}>No. Telepon</Text>
@@ -23,7 +25,8 @@ export default function LoginScreen() {
 
             <TextInput style={styles.inputbox} placeholder="Password" ></TextInput>
 
-            <TouchableOpacity style={styles.loginbutton}>
+            <TouchableOpacity style={styles.loginbutton}
+            onPress={() => navigation.navigate('Profile')}>
                 <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Login</Text>
             </TouchableOpacity>
 
