@@ -10,16 +10,16 @@ export const styles = StyleSheet.create({
     inputbox: {
         backgroundColor: 'white',
         marginHorizontal: 60,
-        marginTop: 17,
+        marginTop: 5,
         width: 300,
-        height: 45,
+        height: 35,
         borderRadius: 10,
         paddingHorizontal: 20
     },
     inputbox2: {
         backgroundColor: '#173248',
         marginHorizontal: 60,
-        marginTop: 17,
+        marginTop: 15,
         width: 300,
         height: 45,
       

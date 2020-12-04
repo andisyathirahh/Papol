@@ -10,7 +10,7 @@ import {useNavigation} from '@react-navigation/native';
 
 import {styles} from './../styles/styles';
 
-export default function HelpScreen() {
+export default function ProfileScreen() {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
@@ -25,29 +25,23 @@ export default function HelpScreen() {
           }}
         />
         </View>
-        <ScrollView>
-        <View>
-        <Text style={styles.placeholdertext}>Nama Lengkap</Text>
+        <Text style={styles.namatext}>Nama Lengkap</Text>
         <TextInput style={styles.inputbox} placeholder="Contoh : Raditya Dika" ></TextInput>
 
         <Text style={styles.placeholdertext}>No. Telepon</Text>
         <TextInput style={styles.inputbox} placeholder="No. Telepon" ></TextInput>
 
-        <Text style={styles.placeholdertext}>Nomor Induk</Text>
+        <Text style={styles.namatext}>Nomor Induk</Text>
         <TextInput style={styles.inputbox} placeholder="Contoh : 77403828...." ></TextInput>
 
         <Text style={styles.placeholdertext} >Password</Text>
         <TextInput style={styles.inputbox} placeholder="Password" ></TextInput>
-
           <View style={{justifyContent: 'center', alignItems: 'center'}}>
           <TouchableOpacity style={styles.loginbutton}
             onPress={() => navigation.navigate('Login')}>
                 <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Logout</Text>
             </TouchableOpacity>
           </View>
-
-        </View>
-        </ScrollView>
         </View>
     );
 }

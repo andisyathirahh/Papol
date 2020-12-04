@@ -13,6 +13,7 @@ import Riwayat from './screens/riwayat_panggilan';
 import HomeScreen from './screens/home_screen';
 import ChangePasswordScreen from './screens/change_password';
 import CallingScreen from './screens/calling';
+import MapsScreen from './screens/maps_screen';
 
 const Stack = createStackNavigator();
 
@@ -58,6 +59,10 @@ function App() {
 
         <Stack.Screen name="Riwayat" 
         component={Riwayat} 
+        options={{headerShown: false}}/>
+
+        <Stack.Screen name="Maps" 
+        component={MapsScreen} 
         options={{headerShown: false}}/>
 
       </Stack.Navigator>
