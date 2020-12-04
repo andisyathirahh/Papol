@@ -10,6 +10,9 @@ import ProfileScreen from './screens/profile_screen'
 import HomeInstansi from './screens/home_instansi';
 import ProfileInstansi from './screens/profile_instansi';
 import Riwayat from './screens/riwayat_panggilan';
+import HomeScreen from './screens/home_screen';
+import ChangePasswordScreen from './screens/change_password';
+import CallingScreen from './screens/calling';
 
 const Stack = createStackNavigator();
 
@@ -20,24 +23,43 @@ function App() {
         <Stack.Screen name="Login" 
         component={LoginScreen} 
         options={{headerShown: false}}/>
+
         <Stack.Screen name="Register" 
         component={RegisterScreen} 
         options={{headerShown: false}}/>
+
+        <Stack.Screen name="Home" 
+        component={HomeScreen} 
+        options={{headerShown: false}}/>
+
         <Stack.Screen name="Help" 
         component={HelpScreen} 
         options={{headerShown: false}}/>
+
         <Stack.Screen name="Profile" 
         component={ProfileScreen} 
         options={{headerShown: false}}/>
+
+        <Stack.Screen name="Change Password" 
+        component={ChangePasswordScreen} 
+        options={{headerShown: false}}/>
+
+        <Stack.Screen name="Calling" 
+        component={CallingScreen} 
+        options={{headerShown: false}}/>
+
         <Stack.Screen name="HomeInstansi" 
         component={HomeInstansi} 
         options={{headerShown: false}}/>
+
         <Stack.Screen name="ProfileInstansi" 
         component={ProfileInstansi} 
         options={{headerShown: false}}/>
+
         <Stack.Screen name="Riwayat" 
         component={Riwayat} 
         options={{headerShown: false}}/>
+
       </Stack.Navigator>
     </NavigationContainer>
   );

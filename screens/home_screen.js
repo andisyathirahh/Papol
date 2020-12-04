@@ -46,8 +46,6 @@ export default function HomeScreen()
             <TouchableOpacity style={{marginTop: 40}} >
                 <Text style= {{textDecorationLine: 'underline', color: 'white', fontWeight: 'bold'}}>Akun Anda</Text>
             </TouchableOpacity>
-
-            <Button onPress={() => navigation.navigate('Calling')} title="Tes"/>
         </View>
     );
 }
