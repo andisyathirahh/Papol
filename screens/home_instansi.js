@@ -18,7 +18,7 @@ export default function HomeInstansi() {
                 source={require('./../assets/logo.png')}></Image>
 
             <TouchableOpacity style={styles.loginbutton}
-            onPress={() => navigation.navigate('ProfileInstansi')}>
+            onPress={() => navigation.navigate('Profile Instansi')}>
                 <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Profile</Text>
             </TouchableOpacity>
 

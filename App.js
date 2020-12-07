@@ -37,11 +37,23 @@ function App() {
 
         <Stack.Screen name="Help" 
         component={HelpScreen} 
-        options={{headerShown: false}}/>
+        options={{headerStyle: {
+          backgroundColor: '#173248'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white'}}/>
 
         <Stack.Screen name="Profile" 
         component={ProfileScreen} 
-        options={{headerShown: false}}/>
+        options={{headerStyle: {
+          backgroundColor: '#173248'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white'}}/>
 
         <Stack.Screen name="Change Password" 
         component={ChangePasswordScreen} 
@@ -59,17 +71,35 @@ function App() {
         component={HomeInstansi} 
         options={{headerShown: false}}/>
 
-        <Stack.Screen name="ProfileInstansi" 
+        <Stack.Screen name="Profile Instansi" 
         component={ProfileInstansi} 
-        options={{headerShown: false}}/>
+        options={{headerStyle: {
+          backgroundColor: '#173248'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white'}}/>
 
         <Stack.Screen name="Riwayat" 
         component={Riwayat} 
-        options={{headerShown: false}}/>
+        options={{headerStyle: {
+          backgroundColor: '#173248'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white'}}/>
 
         <Stack.Screen name="Detail Riwayat" 
         component={DetailRiwayat} 
-        options={{headerShown: false}}/>
+        options={{headerStyle: {
+          backgroundColor: '#173248'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white'}}/>
 
         <Stack.Screen name="Maps" 
         component={MapsScreen} 

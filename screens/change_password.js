@@ -17,8 +17,8 @@ export default function ChangePassword() {
             justifyContent: 'center',
             backgroundColor: '#173248'}}>
 
-            <Image style={{marginTop: 10, marginBottom: 60,
-                marginHorizontal: 160}}
+            <Image style={{marginTop: -5, marginBottom: 60,
+                marginHorizontal: 160, height: 70, width: 70}}
                 source={require('./../assets/key.png')}></Image>
 
             <Text style={styles.textinputnocolor} >Password Saat Ini</Text>

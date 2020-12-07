@@ -15,7 +15,7 @@ export default function DetailRiwayat() {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
-            <Image style={{marginBottom: 50}}
+            <Image style={{marginBottom: 50, height: 70, width: 70}}
                 source={require('./../assets/call.png')}></Image>
 
             <Text style={{fontSize: 28, color: 'white', fontWeight: 'bold'}}>Arsike Cipta Pelangi</Text>

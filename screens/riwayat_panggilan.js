@@ -14,7 +14,7 @@ import { beginAsyncEvent } from 'react-native/Libraries/Performance/Systrace';
 export default function Riwayat() {
     const navigation = useNavigation();
     return (
-        <View style={{flex: 1, justifyContent: 'center', backgroundColor: '#173248'}}>
+        <View style={{flex: 1, backgroundColor: '#173248'}}>
             <Image style={{marginTop: -40, justifyContent: 'center', marginLeft: 40}}
                 source={require('./../assets/logo.png')}></Image>
 
@@ -79,10 +79,6 @@ export default function Riwayat() {
                     style={{marginLeft: 15}}></Image>
             </View>
 
-            <TouchableOpacity style={styles.loginbutton}
-            onPress={() => navigation.navigate('HomeInstansi')}>
-                <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Kembali Ke Menu</Text>
-            </TouchableOpacity>
         </View>
 
     );

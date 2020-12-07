@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#173248'
     },
+
     inputbox: {
         backgroundColor: 'white',
         marginHorizontal: 60,
@@ -16,6 +17,7 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         paddingHorizontal: 20
     },
+
     inputbox2: {
         backgroundColor: '#173248',
         marginHorizontal: 60,
@@ -24,13 +26,13 @@ export const styles = StyleSheet.create({
         height: 40,
         borderRadius: 10,
         borderColor:'white',
-        marginLeft:30,
-        paddingRight:20,
-
+        marginLeft: 50,
+        paddingRight: 20,
         paddingHorizontal: 20,
         borderWidth: 1,
-        
+        textAlignVertical: 'center'
     },
+
     placeholdertext: {
         color: 'white',
         marginLeft: -225,
@@ -38,18 +40,21 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 5,
     },
+
     konfirmtext: {
         color: 'white',
         marginLeft: -155,
         marginTop: 35,
         fontWeight: 'bold'
     },
+
     namatext: {
         color: 'white',
         marginLeft: -210,
         marginTop: 35,
         fontWeight: 'bold'
     },
+
     loginbutton: {
         marginTop: 30,
         borderColor: 'white',
@@ -72,14 +77,16 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 8,
     },
+
     h1Text: {
         color: 'white',
         fontWeight: 'bold',
-        marginLeft: 30,
+        marginLeft: 50,
         fontFamily: 'Times New Rowman',
         fontSize: 16,
         marginTop: 15
     },
+
     h1Text2: {
         color: 'white',
         fontWeight: 'bold',
@@ -90,18 +97,46 @@ export const styles = StyleSheet.create({
         marginBottom:20,
     },
 
-
     subtext: {
         color: 'white',
         marginLeft: 30,
         marginTop: 20,
         fontSize: 14,
     },
+    
     subtext2: {
         color: 'white',
-    marginRight: 150,
+        marginRight: 150,
         marginTop: 20,
         fontSize: 14,
         textAlign:'right',
     },
+
+    inputtextnocolor: {
+        marginHorizontal: 35,
+        borderColor: 'white',
+        borderWidth: 1,
+        borderRadius: 8,
+        height: 45,
+        marginTop: 10,
+        paddingLeft: 20
+    },
+    
+    textinputnocolor: {
+        color: 'white',
+        marginLeft: 35,
+        marginTop: 20,
+        fontWeight: 'bold'
+    },
+
+    changebutton: {
+        borderRadius: 8,
+        borderColor: 'white',
+        borderWidth: 1,
+        marginHorizontal: 150,
+        height: 35,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 50
+    }
 })
