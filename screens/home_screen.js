@@ -30,7 +30,8 @@ export default function HomeScreen()
                     source={require('./../assets/damkar.png')}
                     style={{marginHorizontal: 30}}></Image>
                 </TouchableOpacity>
-                <TouchableOpacity >
+                <TouchableOpacity 
+                onPress={() => navigation.navigate('Maps')}>
                     <Image 
                     source={require('./../assets/ambulance.png')}
                     style={{marginHorizontal: 30}}></Image>

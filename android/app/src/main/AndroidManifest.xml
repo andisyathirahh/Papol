@@ -2,11 +2,7 @@
   package="com.ecall">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <!-- <application>
-    <meta-data 
-    android:name="com.google.android.geo.API_KEY"
-    android:value="YOUR_API_KEY"/>
-    </application> -->
+    
 
     <application
       android:name=".MainApplication"
@@ -15,6 +11,9 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+      <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyBrMApQDUDx26fZNek0JfsTdJ60JPbY8oQ"/>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
