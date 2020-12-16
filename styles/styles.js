@@ -67,6 +67,19 @@ export const styles = StyleSheet.create({
         borderRadius: 8,
     },
 
+    buttoninmap: {
+        marginTop: 30,
+        borderColor: 'white',
+        borderWidth: 1.5,
+        height: 38,
+        width: 150,
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 8,
+        backgroundColor: '#173248',
+    },
+
     instantionbutton: {
         marginTop: 60,
         borderColor: 'white',
