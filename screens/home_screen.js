@@ -23,18 +23,20 @@ export default function HomeScreen()
             <Image style={{marginTop: -100}}
                 source={require('./../assets/logo.png')}></Image>
 
-            <TouchableOpacity style={{marginBottom: 50,}}>
+            <TouchableOpacity style={{marginBottom: 50,}}
+            onPress={() => navigation.navigate('Maps')}>
                 <Image 
                 source={require('./../assets/police.png')}></Image>
             </TouchableOpacity>
 
             <View style={{flexDirection: 'row', marginBottom: 60}} >
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Maps')}>
                     <Image 
                     source={require('./../assets/damkar.png')}
                     style={{marginHorizontal: 30}}></Image>
                 </TouchableOpacity>
-                <TouchableOpacity >
+                <TouchableOpacity 
+                onPress={() => navigation.navigate('Maps')}>
                     <Image 
                     source={require('./../assets/ambulance.png')}
                     style={{marginHorizontal: 30}}></Image>
