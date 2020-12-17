@@ -6,6 +6,7 @@ import {
     TextInput, 
     Image,
     Button,
+    StatusBar,
 } from 'react-native';
 import { styles } from './../styles/styles';
 import { useNavigation } from '@react-navigation/native';
@@ -16,6 +17,9 @@ export default function HomeScreen()
     const navigation = useNavigation();
     return(
         <View style={styles.container} >
+            <StatusBar 
+                backgroundColor= "#173248"
+                hidden={true}/>
             <Image style={{marginTop: -100}}
                 source={require('./../assets/logo.png')}></Image>
 

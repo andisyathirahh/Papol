@@ -12,37 +12,29 @@ import {styles} from './../styles/styles';
 export default function RegisterScreen() {
     const navigation = useNavigation();
     return (
-        <View style={styles.container}>
-            <Image style={{marginTop: -30, marginBottom: -30}} 
-                source={require('./../assets/logo.png')}></Image>
-            <ScrollView>
-                <View style={{alignItems: "center", justifyContent: "center"}}>
-            <Text style={styles.namatext}>Nomor Induk</Text>
-            <TextInput style={styles.inputbox} placeholder="Contoh : 77403828...." ></TextInput>
-
-            <Text style={styles.namatext}>Nama Lengkap</Text>
-            <TextInput style={styles.inputbox} placeholder="Contoh : Raditya Dika" ></TextInput>
-
-            <Text style={styles.placeholdertext}>No. Telepon</Text>
-            <TextInput style={styles.inputbox} placeholder="Contoh : 085432109876" ></TextInput>
-
-            <Text style={styles.placeholdertext}>Password</Text>
-            <TextInput style={styles.inputbox} placeholder="Masukkan Password Min 6 char" ></TextInput>
-
-            <Text style={styles.konfirmtext}>Konfirmasi Password</Text>
-            <TextInput style={styles.inputbox} placeholder="Masukkan Password Min 6 char" ></TextInput>
+        <ScrollView style={{flex: 1, backgroundColor: '#173248'}}>
+            <View style={{alignItems: 'center', marginTop: -40, marginBottom: -65}}>
+                <Image 
+                    source={require('./../assets/logo.png')}></Image>
+            </View>
+            
+            <Text style={styles.h1Text}>NIK</Text>
+            <TextInput placeholderTextColor="#C6C6C6" style={styles.inputbox2} placeholder="Masukan Nama"></TextInput>
+            <Text style={styles.h1Text}>Nama Lengkap</Text>
+            <TextInput placeholderTextColor="#C6C6C6" style={styles.inputbox2} placeholder="Masukan Nama"></TextInput>
+            <Text style={styles.h1Text}>No. Telepon</Text>
+            <TextInput placeholderTextColor="#C6C6C6" style={styles.inputbox2} placeholder="Masukan Nama"></TextInput>
+            <Text style={styles.h1Text}>Password</Text>
+            <TextInput placeholderTextColor="#C6C6C6" style={styles.inputbox2} placeholder="Masukan Nama"></TextInput>
+            <Text style={styles.h1Text}>Konfirmasi Password</Text>
+            <TextInput placeholderTextColor="#C6C6C6" style={styles.inputbox2} placeholder="Masukan Nama"></TextInput>
 
             <TouchableOpacity style={styles.loginbutton}
-            onPress={() => navigation.navigate('Login')}>
-                <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Register</Text>
+                onPress={() => navigation.navigate('Login')}>
+                <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Daftar</Text>
             </TouchableOpacity>
 
-            <Text style={{color: 'white', marginTop: 20}} >Sudah Memiliki Akun?</Text>
-            <Text style={{color: 'white', marginTop: 10, 
-                textDecorationLine: 'underline', fontWeight: 'bold'}} >Masuk</Text>
-                </View>
-            </ScrollView>
-
-        </View>
+            <View style={{marginTop: 40}}></View>
+        </ScrollView>
     );
 }

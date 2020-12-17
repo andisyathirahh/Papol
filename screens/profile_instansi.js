@@ -24,11 +24,11 @@ export default function ProfileInstansi() {
 
           <View>
             <Text style={styles.h1Text}>Nama Instansi</Text>
-            <TextInput placeholderTextColor="white" style={styles.inputbox2} placeholder="Lalu Muh. Andre Winarta"
+            <TextInput placeholderTextColor="white" style={styles.inputbox2} placeholder="Polrestabes Bandung"
               editable={false}></TextInput>
 
             <Text style={styles.h1Text}>Lokasi Instansi</Text>
-            <TextInput placeholderTextColor="white" style={styles.inputbox2} placeholder="081995177415" 
+            <TextInput placeholderTextColor="white" style={styles.inputbox2} placeholder="Jl. Bhayangkara No.1, Soreang" 
               editable={false}></TextInput>
 
             <Text style={styles.h1Text}>Identitas Instansi</Text>

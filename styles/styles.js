@@ -24,6 +24,7 @@ export const styles = StyleSheet.create({
         marginTop: 15,
         width: 300,
         height: 40,
+        color: 'white',
         borderRadius: 10,
         borderColor:'white',
         marginLeft: 50,
@@ -119,7 +120,8 @@ export const styles = StyleSheet.create({
         borderRadius: 8,
         height: 45,
         marginTop: 10,
-        paddingLeft: 20
+        paddingLeft: 20,
+        color: 'white'
     },
     
     textinputnocolor: {

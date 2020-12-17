@@ -19,7 +19,7 @@ import DetailRiwayat from './screens/detail_riwayat';
 
 const Stack = createStackNavigator();
 
-function App() {
+export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -29,7 +29,13 @@ function App() {
 
         <Stack.Screen name="Register" 
         component={RegisterScreen} 
-        options={{headerShown: false}}/>
+        options={{headerStyle: {
+          backgroundColor: '#173248'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white'}}/>
 
         <Stack.Screen name="Home" 
         component={HomeScreen} 
@@ -68,8 +74,11 @@ function App() {
         options={{headerShown: false}}/>
 
         <Stack.Screen name="HomeInstansi" 
-        component={HomeInstansi} 
-        options={{headerShown: false}}/>
+        component={HomeInstansi}
+        options={{headerShown: false,
+          headerStyle: {
+            backgroundColor: '#173248'
+          }}}/>
 
         <Stack.Screen name="Profile Instansi" 
         component={ProfileInstansi} 
@@ -109,5 +118,3 @@ function App() {
     </NavigationContainer>
   );
 }
-
-export default App;

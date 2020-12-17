@@ -25,7 +25,7 @@ export default function ChangePassword() {
             <TextInput placeholderTextColor='white'
                 style={styles.inputtextnocolor} ></TextInput>
             
-            <Text style={styles.textinputnocolor} >Password Baru</Text>
+            <Text style={styles.textinputnocolor} placeholderTextColor='white'>Password Baru</Text>
             <TextInput placeholderTextColor='white'
                 style={styles.inputtextnocolor} ></TextInput>
             

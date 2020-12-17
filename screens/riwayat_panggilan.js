@@ -21,17 +21,7 @@ export default function Riwayat() {
             <Text style={{color: 'white', fontWeight: 'bold',
                 marginLeft: 45, fontSize: 20, marginBottom: 25, marginTop: -25}}>Riwayat Panggilan</Text>
 
-            <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
-                <View>
-                    <Text style={{marginLeft: 45, color: 'white',
-                    fontWeight: 'bold'}} >Arsike Cipta Pelangi</Text>
-                    <Text style={{marginTop: 10, marginLeft: 45, color: 'white'}} >
-                        20 November 2020</Text>
-                </View>
-                <Text style={{marginLeft: 110, color: 'white'}} >21.31</Text>
-                <Image source={require('./../assets/detail.png')}
-                    style={{marginLeft: 15}}></Image>
-            </View>
+            
             <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
                 <View>
                     <Text style={{marginLeft: 45, color: 'white',
@@ -45,39 +35,7 @@ export default function Riwayat() {
                     style={{marginLeft: 15}}></Image>
                 </TouchableOpacity>
             </View>
-            <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
-                <View>
-                    <Text style={{marginLeft: 45, color: 'white',
-                    fontWeight: 'bold'}} >Arsike Cipta Pelangi</Text>
-                    <Text style={{marginTop: 10, marginLeft: 45, color: 'white'}} >
-                        20 November 2020</Text>
-                </View>
-                <Text style={{marginLeft: 110, color: 'white'}} >21.31</Text>
-                <Image source={require('./../assets/detail.png')}
-                    style={{marginLeft: 15}}></Image>
-            </View>
-            <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
-                <View>
-                    <Text style={{marginLeft: 45, color: 'white',
-                    fontWeight: 'bold'}} >Arsike Cipta Pelangi</Text>
-                    <Text style={{marginTop: 10, marginLeft: 45, color: 'white'}} >
-                        20 November 2020</Text>
-                </View>
-                <Text style={{marginLeft: 110, color: 'white'}} >21.31</Text>
-                <Image source={require('./../assets/detail.png')}
-                    style={{marginLeft: 15}}></Image>
-            </View>
-            <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 20}}>
-                <View>
-                    <Text style={{marginLeft: 45, color: 'white',
-                    fontWeight: 'bold'}} >Arsike Cipta Pelangi</Text>
-                    <Text style={{marginTop: 10, marginLeft: 45, color: 'white'}} >
-                        20 November 2020</Text>
-                </View>
-                <Text style={{marginLeft: 110, color: 'white'}} >21.31</Text>
-                <Image source={require('./../assets/detail.png')}
-                    style={{marginLeft: 15}}></Image>
-            </View>
+            
 
         </View>
 
