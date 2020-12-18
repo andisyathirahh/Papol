@@ -16,37 +16,37 @@ export default function MapsScreen () {
     const navigation = useNavigation();
     return(
         <>
-        <MapView
-        style={styles.map}
-        initialRegion={{
-          latitude: 37.78825,
-          longitude: -122.4324,
-          latitudeDelta: 0.03,
-          longitudeDelta: 0.03,
-            }}
-        >
-            <Marker
-            coordinate={{
+            <MapView
+            style={styles.map}
+            initialRegion={{
                 latitude: 37.78825,
                 longitude: -122.4324,
+                latitudeDelta: 0.03,
+                longitudeDelta: 0.03,
                 }}
-            image={require('./../assets/marker.png')}
-            title="Marker"
-            description="Ini adalah marker"></Marker>
-      </MapView>
-      <View
-      style={{
-          position: "absolute",
-          bottom: "3%",
-          width: "50%",
-          alignSelf: "center",
-          }}>
-      <TouchableOpacity
-          style={styles.buttoninmap}
-          onPress={() => navigation.navigate('Home')}>
-          <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Back</Text>
-      </TouchableOpacity>
-      </View>
-      </>
+            >
+                <Marker
+                coordinate={{
+                    latitude: 37.78825,
+                    longitude: -122.4324,
+                    }}
+                image={require('./../assets/marker.png')}
+                title="Marker"
+                description="Ini adalah marker"></Marker>
+            </MapView>
+            <View
+            style={{
+                position: "absolute",
+                bottom: "3%",
+                width: "50%",
+                alignSelf: "center",
+                }}>
+            <TouchableOpacity
+                style={styles.buttoninmap}
+                onPress={() => navigation.navigate('Home')}>
+                <Text style={{color: 'white', textAlign: 'center', textAlignVertical: 'center', fontWeight: 'bold'}} >Back</Text>
+            </TouchableOpacity>
+            </View>
+        </>
     );
 }
